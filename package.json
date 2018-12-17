@@ -1,12 +1,30 @@
 {
-  "name": "Epicom",
+  "name": "epicom",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "cross-env NODE_ENV=deployment nodemon",
+    "production": "cross-env NODE_ENV=production pm2 start src/index.js --name Epicom",
+    "test": "cross-env NODE_ENV=test nyc --reporter=html mocha --exit --timeout 5000"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^3.0.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "pm2": "^3.2.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
 }

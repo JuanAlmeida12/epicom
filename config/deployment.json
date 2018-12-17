@@ -1,0 +1,6 @@
+{
+    "server_port": 3000,
+    "database": {
+        "host": "mongodb://default:default1@ds037488.mlab.com:37488/epicom"
+    }
+}

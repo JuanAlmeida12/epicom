@@ -2,5 +2,10 @@
     "server_port": 3000,
     "database": {
         "host": "mongodb://default:default1@ds037488.mlab.com:37488/epicom"
+    },
+    "epicom": {
+        "URL": "https://sandboxmhubapi.epicom.com.br/v1",
+        "token": "Ip15q6u7X15EP22GS36XoNLrX2Jz0vqq",
+        "key": "897F8D21A9F5A"
     }
 }

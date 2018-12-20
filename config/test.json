@@ -2,5 +2,10 @@
     "server_port": 3000,
     "database": {
         "host": "<database url>"
+    },
+    "epicom": {
+        "URL": "<API URL>",
+        "token": "<API Token>",
+        "key": "<API Key>"
     }
 }
